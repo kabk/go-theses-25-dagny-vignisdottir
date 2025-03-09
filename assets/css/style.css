@@ -2,20 +2,135 @@
 
 
 
-/* VARIABLES */
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+/* remember to put them in the project folder */
 
+/* 
+  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
+  or 'transfonter' (https://transfonter.org)
+  to generate your own font for the web from .ttf or .oft files 
+*/
+
+@font-face { 
+  font-family: 'MandrelDidone-ConThi.woff2'; 
+  src: url('../fonts/MandrelDidone-ConThi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face { 
+font-family: 'InstrumentSerif-Regular'; 
+src: url('../fonts/InstrumentSerif-Regular.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
+
+@font-face { 
+font-family: 'InstrumentSerif-Italic'; 
+src: url('../fonts/InstrumentSerif-Italic.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
+
+@font-face {
+  font-family: 'Sentient-Light'; 
+  src: url('../fonts/Sentient-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal; 
+  font-display: block;
+}
+
+@font-face {
+font-family: 'Sentient-Italic';
+src: url('../fonts/Sentient-LightItalic.woff2') format('woff2');
+font-weight: normal;
+font-style: italic;
+font-display: block;
+}
+
+@font-face {
+font-family: 'Arial'; 
+src: url('../fonts/Arial.woff') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
+
+
+@font-face {
+font-family: 'Courier'; 
+src: url('../fonts/CourierStd.woff2') format('woff2');
+font-weight: normal;
+font-style: normal; 
+font-display: block;
+}
+
+@font-face {
+font-family: 'Courier-italic'; 
+src: url('../fonts/CourierStd-Oblique.woff2') format('woff2');
+font-weight: normal;
+font-style: italic;
+font-display: block;
+} 
+
+@font-face {
+font-family: 'Baskerville-italic'; 
+src: url('../fonts/LibreBaskerville-Italic.woff2') format('woff2');
+font-weight: normal;
+font-style: italic; 
+font-display: block;
+} 
+
+@font-face {
+font-family: 'Edwardian-Regular';
+src: url('../fonts/EdwardianScriptITC-regular.woff2') format('woff2');
+font-weight: normal;
+font-style: normal; 
+font-display: block;
+} 
+
+
+
+/* VARIABLES */
+/* var is written with -- before & should be written within the root */
+/* this below acts like a text style in indesign–better to apply everything to this menu & just change the color from there */
 :root {
   /* Color values */
-  --color-background: rgba(200,200,200,1);
-  --color-block: rgba(255,255,255,1);
-  --color-text: rgba(0,0,0,1);
+  
+  --color-background: rgba(255,255,255,1);
+  --color-text: rgb(30, 91, 98);
   --color-text-link: rgba(0,0,255,0.8);
   --color-text-link-hover: rgba(0,0,255,0.4);
+
   /* Font values */
-  --font-family: 'Helvetica', 'Arial', sans-serif;
-  --font-size: 24px;
+  --font-title: 'InstrumentSerif-Regular', serif;
+  --font-title-italics: 'InstrumentSerif-Italic', serif;
+  --font-title-edward: 'Edwardian-Regular', serif;
+  --font-heading: 'InstrumentSerif-Regular', serif;
+  --font-body: 'Sentient-Light', serif;
+  --font-body-italics: 'Sentient-Italic', serif;
+  --font-realheading: 'MandrelDidone-ConThi.woff2', serif;
+  --font-footnotes: 'Courier', serif;
+  --font-footnotes-italic: 'Courier-italic', serif;
+  --font-quote: 'Baskerville-italic', serif;
+/*  --font-footnotes: 'Courier', serif;
+  --font-footnotes-italic: 'Courier-italic', serif; */
+
+  --font-size-title: 220px;
+  --font-size-heading: 34px;
+  --font-size-subheading: 40px;
+  --font-size-body: 20px;
+  --font-size-realheading: 48px;
+  --font-size-biblio: 15px;
+  --font-size-quote: 25px;
+
   /* Margin value */
-  --margin: 1rem;
+  --margin-heading: 10rem; /* : root of em space or smth – changes w the font size  */
+  --margin-body: 0rem;
+  --margin-realheading: 10rem; 
 }
 
 
@@ -23,135 +138,136 @@
 /* GENERAL STYLES */
 
 html {
-  font: var(--font-size) var(--font-family);
+  font: var(--font-size-body) var(--font-body);
   color: var(--color-text);
   background-color: var(--color-background);
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+  cursor: url('../cursor/asterisk02.png')16 16,auto;
+    scroll-behavior: smooth;
+
 }
 
 body {
-  position:relative;
-  background-color: var(--color-background);
-  font: var(--font-size) var(--font-family);
+  font-family: var(--font-body);
+  /*position:relative;*/
+  /* background-color: var(--color-background); */
   color: var(--color-text);
-  width:100%;
-  height:auto;
-  overflow-y:auto;
+  width: 100%;
+  /* height: auto; */
+  /* overflow-y: auto; */
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: var(--font-realheading);
+  font-size: 80px;
+  line-height: 1.2;
+
+  justify-content: center;
+  /* width: 42%; */
+  /* margin: 0 auto; */
+  padding: 10px;
+ 
+  display: block;
+  font-weight: normal;
+  align-items: center;
+  
+  line-height: inherit; 
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
+}
+
+h2, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  line-height: 1.2;
+  /*text-align: justify;*/
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-weight: normal;
+  line-height: inherit; 
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
+
+}
+h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-body);
+  line-height: 1.2;
+  /*text-align: justify;*/
+  justify-content: left;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  align-items: left;
+  display: flex;
+  font-weight: normal;
+  line-height: inherit; 
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
 }
 
 
+p{
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  text-align: justify;
+  /* margin: var(--margin-body) 20rem; */
+  /* padding: 0; */
+  /* padding-bottom: 4rem; */
+  /* padding-left: 6rem; */
+}
 
-/* PAGE STYLES */
+/*
+/*foot/sidenotes*/
 
-/* page structure */
+
+
+
+
+
 
 div.page-wrapper {
   /* the element that 'wraps' everything */
-  position: relative;
-  display: block;
-  float:left;
-  width:100%;
-  height:auto;
   padding: var(--margin);
-  background-color: darkgray;
-  box-sizing: border-box;
-}
-
-/* Do your work here... */
-
-main.layout-container {
-  position:relative;
-  display: block;
-  float:left;
-  width:100%;
-  height:auto;
-  background-color: black;
-}
-
-.layout-block{
-  width:25%;
-  height:50vh;
-  position:relative;
-  display:block;
-  float:left;
-  clear:right;
-  background-color: yellow;
-  margin:0rem;
-  padding:0rem;
-}
-
-.layout-block p{
-  text-align:center;
-  margin:0;
-  padding:0;
-  background-color: goldenrod;
 }
 
 
-
-/* color scheme blocks */
-
-.layout-block:nth-of-type(1){
-  opacity:1;
- /* margin:5rem;*/
-}
-
-.layout-block:nth-of-type(2){
-  opacity:0.8;
-  clear:both;
-}
-
-.layout-block:nth-of-type(3){
-  opacity:0.6;
-}
-
-.layout-block:nth-of-type(4){
-  opacity:0.5;
-}
-
-.layout-block:nth-of-type(5){
-  opacity:0.4;
-}
-
-.layout-block:nth-of-type(6){
-  opacity:1;
-  padding:3rem;
-  border:3px solid red;
-  box-sizing: border-box;
+header{
   position:fixed;
   top:0;
-  right:0;
-  bottom:0.2;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color: whitesmoke;
 }
 
-.layout-block:nth-of-type(7){
-  opacity:0.8;
-}
-
-.layout-block:nth-of-type(8){
-  opacity:0.6;
-}
-
-.layout-block:nth-of-type(9){
-  opacity:0.5;
-}
-
-.layout-block:nth-of-type(10){
-  opacity:0.4;
-}
-
-.layout-block:nth-of-type(11){
-  opacity:1;
-}
-
-.layout-block:nth-of-type(12){
-  opacity:0.8;
+.content{
+  width:100vw;
+  height:100%;
+  /* position: absolute; */
+  top:0;
+  /* margin-top:100vh; */
+  background-color: white;
+  /* overflow-y:auto; */
+  /* color: red; */
 }
 
 
 
-/* UTILITY CLASSES */
 
-/* hide desktop mobile etc */
 
 .desktop-only {
   display: block;
@@ -163,7 +279,455 @@ main.layout-container {
 
 
 
+.title-container {
+  color: var(--color-text);
+  line-height: 0.66;
+  justify-content: center;
+  font-weight: normal;
+  align-items: center;
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
+  width: 88vw;  /* 80% of the viewport width */
+  height: 88vh; /* 80% of the viewport height */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 8.7rem;
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 10vw;
+  /* line-height: 0.66; */
+  margin-right: -17px;
+}
+
+.title-edward {
+  font-family: var(--font-title-edward);
+  letter-spacing: 28px;
+  line-height: 8.5vw;
+  margin-left: -21px;
+  font-size: 13vw;
+  /* margin-right: 40px;
+  margin-left: 10px; */
+}
+
+.title-italics {
+  font-family: var(--font-title-italics);
+  font-size: var(--font-size-title);
+  line-height: 0.66;
+  margin-left: -4px; 
+  font-size: 10vw;
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+/* made a lil menu house */
+.jimMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* Make background transparent */
+  /* outline: 1px solid black; */
+  width: auto;
+  height: auto;
+  position: fixed;
+  border-radius: 20px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px 10px;
+  overflow: hidden; /* Ensures blur doesn't extend outside */
+}
+
+/* New blur layer */
+.blurLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; /* Or any other background */
+  filter: blur(8px); /* Adjust the blur level */
+  border-radius: inherit; /* Keep rounded corners */
+  z-index: 0; /* Keeps blur behind text */
+}
+
+/* Keep text sharp */
+.jimMenuText {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Ensure text stays above the blur */
+}
+
+
+.chapter-title {
+  opacity: 100;
+  display: none;
+  height: 1rem; /* Ensures space for text so layout doesn’t shift */
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  white-space: noWrap;
+}
+
+.jimMenuText nav {
+  display: flex;
+  gap: 10px;
+}
+
+.jimMenuText nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.jimMenuText nav a:hover {
+  font-style: italic;
+}
+
+
+
+
+
+.jimMainCont {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: transparent; /* Remove direct background */
+  color: var(--color-text);
+  display: flex;
+  overflow: hidden; /* Keeps blur inside */
+}
+
+/* Blur only the background */
+.jimMainCont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; /* Background to blur */
+  filter: blur(8px); /* Adjust blur intensity */
+  z-index: -1; /* Keep it behind content */
+}
+
+
+
+
+
+
+.jimImageCont{
+  width: 20%;  
+  display: flex; /* Optional: Helps align images properly */
+  flex-direction: column; /* Stack images vertically */
+  padding-left: 10px;
+padding-right: 10px;
+/* border: 1px solid green; */
+}
+
+
+
+
+.jimBodyTextCont{
+width: 60%;
+padding-left: 10px;
+padding-right: 10px;
+/* border: 1px solid blue; */
+
+}
+
+.jimFootnoteCont{
+  width: 20%;  
+  display: flex; /* Optional: Helps align images properly */
+  flex-direction: column; /* Stack images vertically */
+  padding-left: 10px;
+  padding-right: 20px;
+  /* border: 1px solid orange; */
+  height:auto;
+}
+
+img{
+  display: flex;
+  width:18vw;
+  height: auto;
+  top: 100px;
+  opacity: 100%;
+  display: block;
+  z-index: 2;;
+}
+
+.jimImageCont img{
+width: 21vw;
+}
+
+.fig-image{
+width: auto;
+}
+
+
+.fig-image:hover{
+  
+  transform: scale(1.3);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.footnote-ref{
+  color: var(--color-text);
+}
+
+.image-ref{
+  /* color: lime; */
+}
+
+.margin-note {
+  font-family: var(--font-footnotes);
+  padding-top: 10px;
+  font-size: 0.8rem;
+  position: absolute;
+  padding-right: 20px;
+  margin: 0px;
+  word-spacing: -0.2rem;
+  /* margin-bottom: -1.6rem; */
+}
+
+
+
+
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  z-index: -1; /* Default z-index for landing page */
+  
+}
+
+.Bibliography {
+  top: 0px;
+  /* position: fixed; */
+  width: auto;
+  height: 100%;
+  background-color: white;
+  padding-bottom: 25vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+
+
+.BibliographyText{
+  margin: 1rem;
+  font-size: 1rem;
+  width: auto; /* Set the width as needed */
+  column-count: 2; /* Set the number of columns */
+  column-gap: 20px; /* Add some space between columns */
+  padding: 0px;
+  text-align: left; /* Optional: to justify the text */
+  overflow-wrap: break-word;
+}
+
+
+
+
+.jimIntroText p{
+  margin-top: 20vh;
+  width: 70vw;
+}
+
+.fillerPageEmpty1{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: -2;
+  opacity: 0%;
+}
+.fillerPageEmpty2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: -2;
+  opacity: 0%;
+}
+
+
+.intext-quote{
+  font-family: var(--font-quote) !important;
+  /* font-size: var(--font-size-body);
+  margin: var(--margin-body) 20rem;
+  padding: 0;
+  padding-bottom: 4rem;
+  padding-left: 6rem; */
+}
+
+.quote{
+  width:100%;
+  font-family: var(--font-quote) !important;
+  font-size: var(--font-size-quote);
+  line-height: 30px;
+  /* margin: var(--margin-body) 20rem; */
+  /* padding: 0;
+  padding-bottom: 4rem;
+  padding-left: 6rem; */
+  /* align-items: center; */
+  text-align: center;
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
+}
+
+
+.emptySpace{
+  width: 100vw;
+  height: 100px;
+  position: relative;
+  background: white;
+  padding-top: 200px;
+}
+
+
+.caption {
+  font-family: var(--font-footnotes);
+  position: relative;
+  font-size: 0.70vw;
+  width: 100%;
+  color: var(--color-text);
+  /* text-align: center; */
+  display: block; /* Ensures caption stays below image */
+  margin-top: -5px; /* Reduce this value to move it closer */
+  text-align: center;
+  margin-top: -10px;
+  z-index: 6;
+  
+}
+
+
+
+.cover img {
+  margin-top: 3vw;
+  width: 70vw;
+  height: auto; /* Keeps aspect ratio */
+  z-index: -2;
+  margin-bottom: -20vw;
+
+}
+
+
+
+
+
+.cover-left{
+  opacity: 100%;
+  width:320px;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: auto;
+  margin-top: -1.2rem;
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  transform: translate(0, -50%);
+  z-index: -2;
+}
+
+.cover-right{
+  opacity: 100%;
+  width:320px;
+  height: auto;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: auto;
+  margin-top: -1.2rem;
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  transform: translate(0, -50%);
+  z-index: -2;
+}
+
+
+
+.header-box{
+  position: fixed;
+  top: 10px;
+  /* background-color: red; */
+width: 100vw;
+height: 20px;
+z-index: 3;
+display: flex;
+align-content: center;
+text-align: center;
+
+}
+
+.header-text {
+  position: relative;
+  margin: auto;
+  color: var(--color-text);
+  /* border: 1px solid blue; */
+  padding: 1rem;
+  background-color: transparent; /* Remove direct background */
+  overflow: hidden; /* Keep blur inside */
+  border-radius: 2px;
+}
+
+/* Blur only the background */
+.header-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; /* Background to blur */
+  filter: blur(8px); /* Adjust blur intensity */
+  z-index: -1; /* Keep it behind the text */
+  border-radius: inherit; /* Maintain any border radius */
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+
 /* WEBSITE MEDIA QUERIES */
+
+/* responsive typeface for various breaking points, sets the default 'rem' value */
+@media (max-width: 299px) { :root{--font-size: 18px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 299px) and (max-width: 340px) { :root{--font-size: 19px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 340px) and (max-width: 440px) { :root{--font-size: 20px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 441px) and (max-width: 779px) { :root{--font-size: 19px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 780px) and (max-width: 992px) { :root{--font-size: 20px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 993px) and (max-width: 1200px) { :root{--font-size: 21px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 1201px) and (max-width: 1320px) { :root{--font-size: 22px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 1321px) { :root{--font-size: 24px;} html, body {font: var(--font-size) var(--font-text); } }
 
 /* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
 /* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
@@ -187,5 +751,33 @@ main.layout-container {
 }
 
 
+
+/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+@media (max-width: 339px) {
+
+  /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+   /* your overriding css properties here */
+
+}
+
+
+
+/* use this query to apply style for 'small' desktop screens */
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* your overriding css properties here */
+
+}
 
 

@@ -2,118 +2,1454 @@
 
 <html lang="en">
 
-	<head>
+<head>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-		<!-- website title, visible in the browser window and on link sharing -->
-		<title>CSS layout exercise</title>
-
-		<!-- links for extensions and dependencies -->
-
-		<!-- css -->
-		<!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
-		<link rel="stylesheet" href="assets/css/normalize.css">
-		<!-- you stylesheet -->
-		<link rel="stylesheet" href="assets/css/style.css?ver=1.0">
-	    
-	</head>
-
-	<body>
-
-		<!-- webpage content goes here -->
-
-		<div class="page-wrapper">
-
-			<main class="layout-container">
-
-				<div class="layout-block layout-block-1">
-
-					<p>Block 1</p>
-
-				</div>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
-				<div class="layout-block layout-block-2">
-
-					<p>Block 2</p>
-
-				</div>
+	<meta name="description" content="Description of your web page" />
+	<meta name="keywords" content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..." />
+	<meta name="author" content="Name of the author/owner of the webpage's content" />
 
 
-				<div class="layout-block layout-block-3">
-
-					<p>Block 3</p>
-
-				</div>
-
-				<div class="layout-block layout-block-4">
-
-					<p>Block 4</p>
-
-				</div>
+	<link rel="icon" href="assets/images/favicon/favicon.png" />
 
 
-				<div class="layout-block layout-block-5">
+	<title>Closely Looking</title>
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css?ver=1.0">
 
-					<p>Block 5</p>
+</head>
 
-				</div>
-
-
-				<div class="layout-block layout-block-6">
-
-					<p>Block 6</p>
-					
-				</div>
-
-				<div class="layout-block layout-block-7">
-
-					<p>Block 7</p>
-
-				</div>
+<body>
 
 
-				<div class="layout-block layout-block-8">
-
-					<p>Block 8</p>
-
-				</div>
 
 
-				<div class="layout-block layout-block-9">
-
-					<p>Block 9</p>
-
-				</div>
-
-				<div class="layout-block layout-block-10">
-
-					<p>Block 10</p>
-
-				</div>
 
 
-				<div class="layout-block layout-block-11">
 
-					<p>Block 11</p>
+	<div class="header-box" >
+		<div class="header-text">DAGNÝ RÓSA<br>VIGNISDÓTTIR</div>
+		<div class="header-text">ROYAL ACADEMY OF ART,<br>THE HAGUE, 2025</div>
+		<div class="header-text">GRAPHIC DESIGN<br>BACHELOR THESIS</div>
+		<div class="header-text">SUPERVISED BY PROF. <br>DR. FÜSUN TÜRETKEN</div>
 
-				</div>
+	</div>
 
 
-				<div class="layout-block layout-block-12">
 
-					<p>Block 12</p>
-					
-				</div>
+	<div class="landingPage ">
 
-			</main>
+
+		<!-- <div class="title-container">
+			<span class="title">Closely</span>
+			<span class="title-edward">L</span>
+			<span class="title-italics">ooking,</span><br>
+
+			<span class="title">Yourself,</span><br><br>
+			<span class="title">Your</span>
+			<span class="title-edward">E</span>
+			<span class="title-italics">arthkin</span><br><br>
+		</div>
+
+
+		<div class="cover-left">
+			<img src="/assets/images/coverleft.jpg">
+		</div>
+
+		<div class="cover-right">
+			<img src="/assets/images/coverright.jpg">
+		</div> -->
+
+		<div class="cover"> 
+			<img src="/assets/images/cover02.png">
+		</div>
+
+
+		<div class="jimIntroText">
+			<p>
+				Through looking at shared origins of life on Earth and weaving human narratives with multispecies
+				accounts, this thesis explores the fundamental interconnection between terrestrial beings and their
+				life-sustaining planet. It examines humankind’s positioning within the natural world, its ontological
+				connection, a cultural disconnection and its many visual representations. Critically addressing the
+				commodification of nature and its role in an untimely ecological collapse, it reimagines alternative
+				worlds built on reciprocity, care, and collective survival.
+			</p>
+		</div>
+	</div>
+
+
+
+	<!-- this is an empty div to make the scrolling to the abstract/landing page work -->
+	<div class="fillerPageEmpty2" id="abstract"></div>
+
+
+	<div class="jimMainCont">
+
+
+		<!-- All of the images go here -->
+		<div class="jimImageCont">
+			<div class="fig-image" >
+			<img id="image1" src="/assets/images/01.png">
+			<p class="caption">FIG. 1</p>
+			</div>
+
+			<div class="fig-image" >
+			<img id="image2" src="/assets/images/02.png">
+			<p class="caption">FIG. 2</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image3" src="/assets/images/03.png">
+			<p class="caption">FIG. 3</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image4" src="/assets/images/04.png">
+			<p class="caption">FIG. 4</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image5" src="/assets/images/05.png">
+			<p class="caption">FIG. 5</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image6" src="/assets/images/06.png">
+			<p class="caption">FIG. 6</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image7" src="/assets/images/07.png">
+			<p class="caption">FIG. 7</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image8" src="/assets/images/08.png">
+			<p class="caption">FIG. 8</p>
+		</div>
+			<div class="fig-image" >
+			<img id="image9" src="/assets/images/09.png">
+			<p class="caption">FIG. 9</p>
+			</div>
+		</div>
+
+
+		<!-- All of the body text goes here -->
+		<div class="jimBodyTextCont">
+			<h4 id="prologue">PROLOGUE </h4>
+			<p>
+				In this story, we will be tracing the origins of life on Earth to its material beginnings and
+				traveling
+				down evolutionary routes, wading through entangled histories, skipping some parts and biting into
+				others, weaving human narratives in with more-than-human accounts and seeing where they overlap,
+				where
+				they complement each other and when they don’t, where they diverge and when they were forced apart,
+				what’s left behind, what to do, which steps to take, how to weave them in again.
+			</p>
+
+			<div class="quote">
+				<i>
+					“The stories we are told shape the way we see the world, <br>
+					which shapes the way we experience the world” </i> <br>
+				<p>(Jensen, 2009).</p>
+			</div>
+
+			<br><br><br><br><br><br>
+
+			<h4 id="chapter-1">A BRIEF HISTORY of YOU, ME & EVERYTHING </h4>
+
+			<h2 id="GENESIS"><i>GENESIS</i></h2>
+
+
+
+
+
+			<sup id="img1" class="image-ref"></sup>
+			<p>
+				
+				It’s most likely that you<sup id="ref1" class="footnote-ref">1</sup>
+				would consider yourself as a member of the genus Homo Sapiens. If so, then you’d probably have some
+				sort
+				of a body, and a skeleton to hold it in place. Your body would contain living cells and
+				extracellular
+				materials, which would be organized into tissues, organs, and other systems, and amount to an
+				impressively expansive organism. You’d probably have features which you’d use to sense the world;
+				perhaps a tongue, some skin, a pair of ears and eyes,
+				and an uncharacteristically large brain to make sense of it all. As a mammal, you’d presumably
+				possess
+				mammal-like qualities, such as hair & mammary glands (Lotha et al., 2000;). Given that you are in
+				fact
+				human, you’re not all that different from earlier instances in the human lineage, and though
+				complex,
+				your bodily system is akin to many other organic lifeforms<sup id="ref2" class="footnote-ref">2</sup>
+				(Rafferty et al., 1998). You share DNA with your fellow Earth-kin<sup id="ref3"
+					class="footnote-ref">3</sup>, and some more than others. You share 99.9% of your DNA with
+				another
+				human,
+				98.8% with chimpanzees, 97.5% with mice, 94% with dogs, 80% with cows, 60% with
+				a common fruit fly, and more than 50% with a banana
+				(Ang, 2021).
+			</p>
+
+			<p>
+				If you’d like to trace your genealogical history further, you would eventually find yourself on the
+				ocean floor some 4.2 billion years ago, in a single-cell bacterial organism (or group of organisms)
+				presently titled as LUCA, or the Last Universal Common Ancestor of all life on Earth<sup id="ref4"
+					class="footnote-ref">4</sup>(Wade,
+				2016).
+				It’s becoming was quite remarkable, as it was brought on by a series of ecological events caused by
+				the
+				impact of our moon colliding with Earth, which converted the surface of our planet into a bed of
+				boiling
+				lava, turned water to gasses, and carbon to atmospheric carbon dioxide. Only when Earth had cooled
+				down
+				significantly enough to contain liquid water–and said water interacted with magma erupting through
+				the
+				ocean floor–were the ideal conditions generated for LUCA, your ancestor<sup id="ref5"
+					class="footnote-ref">5</sup>,
+				to emerge. LUCA was not the origin of life on Earth, but rather the emergence of carbon-based life
+				as we
+				know it today<sup id="ref6" class="footnote-ref">6</sup> (Fox, 2024).
+			</p>
+
+			<p>
+				With the shifting conditions of the ecosystem and increased flow of energy and minerals, LUCA
+				further
+				evolved into different types of organisms: some plant-like and some animal-like: soft-bodied
+				multicellular organisms with nervous systems, guts, muscle tissues, and traces of cholesterol.
+				(Mileham
+				et al., n.d.). Just like you, they could move, feed, digest and reproduce. An increase in oxygen<sup
+					id="ref7" class="footnote-ref">7</sup> led to their development of eyes & spines, and only
+				when calcium, phosphate & other materials got added to<sup id="ref8" class="footnote-ref">8</sup>
+				the
+				primordial
+				soup<sup id="ref9" class="footnote-ref">9</sup> , could they armor themselves with teeth, claws,
+				shells
+				& skeletons.
+				Each time the conditions changed, they changed with them, and every iteration generated a new
+				iteration
+				(Fox, 2024). All these iterations shared (and share) a crucial dependence on the cyclical flow of
+				energy
+				and minerals, where our bodies capture a portion of this flow at birth, release it when we die and
+				transform into different sets of materials. From plants to herbivores, to carnivores to plants
+				again<sup id="ref10" class="footnote-ref">10</sup> . In many ways, the stability and resilience of
+				ecosystems
+				is rooted in
+				this constant circulation of biomass and flesh (de Landa, 1997).
+			</p>
+
+			<br><br>
+
+			<!-- <p style="display: inline;"> </p> -->
+			<h2 id="SYMBIOSIS"><i>SYMBIOSIS</i></h2>
+
+
+
+			<sup id="img2" class="image-ref"></sup>
+			<p>
+				
+				As fleshy lifeforms and biomasses ourselves, we too, partake in this type of energy exchange, which
+				is
+				often referred to as a food chain. There’s many ways in which energy circulates through life-systems
+				on
+				Earth, and there’s many types of food chains. When they overlap–and form a system of interlocking
+				chains–we can call them “food webs”. The interaction between individual members of these organic
+				systems, and with inorganic systems, is called an ecosystem. “Ecosystems are not random assemblages
+				of
+				species, but self-organized meshworks in which species are interconnected by their functional
+				complementarities: prey and predator, host and parasite” (De Landa, 1997, p. 106). Since all
+				lifeforms
+				belong to some ecosystem, they’re practically everywhere<sup id="ref11" class="footnote-ref">11</sup>.
+				There are rich ecosystems existing on your skin and whole societies in dust particles. This is
+				cleverly
+				demonstrated in Dr. Seuss’ fable Horton hears a Who!, where Horton, the Elephant and protagonist of
+				the
+				story, finds a speck of dust and learns that it carries a whole biome<sup id="ref12"
+					class="footnote-ref">12</sup>
+				of its own (Seuss, 1954). Inside these biomes and ecosystems, its agents<sup id="ref13"
+					class="footnote-ref">13</sup>
+				engage in intimate relationships with one another, which are called symbiotic relationships. When
+				all
+				species involved benefit from these interactions, we call them mutalistic relationships<sup id="ref14"
+					class="footnote-ref">14</sup> . Wolves and ravens are a good example of this type of
+				dynamic. In
+				these
+				mutualisms, the ravens alert the wolves if a prey is in sight, which the pack attacks, and the
+				ravens
+				get to feast on the leftovers (Bryden, 2023). Similarly, Yucca moths lay their eggs in the seedpods
+				of
+				yucca plants. The plant gets pollinated, and when the larvae hatch, they have a plant to snack on
+				(Encyclopedia Britannica, 2025). There are many documented cases of human and more-than-human<sup
+					id="ref15" class="footnote-ref">15</sup> mutualisms, such as humans collaborating with whales
+				and
+				dolphins in
+				locating and hunting fish, where the sea-bound ones typically did most of the finding and got their
+				share of the catch as compensation (Truscott, 2022); or the long-standing mutualist relationship
+				between
+				humans and cats.
+			</p>
+
+			<p>
+				Though built environments, such as cities and towns, are by default excluding in the types of
+				lifeforms
+				and natures allowed to persist inside of them; and consequently lacking in variety of organic
+				systems,
+				they are still teeming with life in overlapping ecosystems, and every small weed that grows against
+				the
+				manufactured landscape contains a rich life of its own. The built environments can also be
+				considered
+				ecosystems themselves, both in relation to its human and more-than-human inhabitants, but also the
+				biomass that circulates through them to sustain said inhabitants. Cities and towns engage in
+				parasitic
+				relationships with their rural surroundings, which they use to produce said biomass and other forms
+				of
+				energy (de Landa, 1977).
+			</p>
+
+			<br><br>
+
+			<h2 id="YOU as NATURE"><i>YOU as NATURE</i></h2>
+			<p>
+				There are incredible amounts of diverse lifeforms currently existing in entanglement with one
+				another on
+				Earth. More than two million existing species have been named and described & many remain to be
+				discovered<sup id="ref16" class="footnote-ref">16</sup>. These organisms are also as varied as they
+				are
+				many:
+				on Earth you can see bacteria living in hot springs, fungi thriving on ice masses, algae in saline
+				waters, spiders on top of the Himalayas, and giant tube worms in hydrothermal vents on the ocean
+				floor
+				(Ayla, 2025). On both collective and individual levels, these lifeforms physically embody their
+				evolutionary heritage, not only in their DNA and their structure but also the very materials they’re
+				made of. Life on Earth is still assembled from the same recycled materials as it started with: some
+				carbon, some calcium, phosphate, and other materials (de Landa, 1977). That being said, their
+				structure<sup id="ref17" class="footnote-ref">17</sup> is maybe
+				even more interesting to look at, as it’s quite the peculiar phenomenon: The way in which these
+				bio-materials flow, grow, and physically manifest themselves has a habitual tendency to follow the
+				same
+				type of formula<sup id="ref18" class="footnote-ref">18</sup>
+				: a single line that splits, which splits again and again and again. It’s nature’s most efficient
+				route
+				
+				for growth and distribution of energy: a mathematical formula called fractals<sup id="ref19"
+					class="footnote-ref">19, </sup><sup id="ref20" class="footnote-ref">20</sup> (Pearce, 2024).
+					<sup id="img3" class="image-ref"></sup>
+			</p>
+
+			
+			<p>
+				
+				These self-similar branching patterns can be found everywhere: You can notice them in flowers, trees
+				&
+				plants, in Earthly weather systems and the cosmos, in mountains, rivers, waves and coastlines
+				(ibid.).
+				You can also see them in the structure of your body: in your veins, your skin, your lungs & kidneys,
+				your brain, nervous system, and in the rhythms of your heart; in your microbes and molecular
+				structure,
+				and in the arrangement of your DNA. The branching pattern that divides the deltas is the same as the
+				subdivision of your veins; the neural networks in your brain look just like stars in galaxies; and
+				your
+				lungs are like a branching tree, whose cross-section resembles your fingerprint.
+				You can recognize these shared geometries in your fellow homo sapiens, your fellow mammals, fellow
+				lifeforms and all other organic systems that surround you (Neronha et al., 2019). As relatives,
+				we’re
+				interconnected and intertwined––and if you look closely, you can see yourself in the other & every
+				living thing in every living thing. You might even come to the conclusion that not only do you
+				resemble
+				nature, but you might in fact be nature.
+			</p>
+
+			<div class="quote">
+				<i>
+					“To see a World in a Grain of Sand <br>
+					And a Heaven in a Wild Flower <br>
+					Hold Infinity in the palm of your hand <br>
+					And Eternity in an hour” <br></i>
+				<p>(Blake, 1863, pp. 55-56).</p>
+
+			</div>
+
+			<br><br><br><br><br><br>
+
+			<h4 id="chapter-2">COURTSHIP RITUALS, NEUROSCIENCE <br>
+				& ORNAMENTING as SELF PORTRAITURE </h4>
+				<sup id="img4" class="image-ref"></sup>
+				<sup id="img5" class="image-ref"></sup>
+				<sup id="img6" class="image-ref"></sup>
+
+			<h2 id="COURTSHIP RITUALS+"><i>COURTSHIP RITUALS+</i></h2>
+
+
+			<p>
+			
+				As at least an agent of nature<sup id="ref21" class="footnote-ref">21</sup>, you have been through
+				millions of years of evolution and taken part in
+				countless cycles of flows of energy & minerals (de Landa, 1977). In a single lifetime, you likely
+				participate in certain rituals or life practices that have proven to sustain you<sup id="ref22"
+					class="footnote-ref">22</sup> and your cells until your timely demise and the next cycle begins:
+				You
+				try to mind your water
+				intake, you scavenge for nutrients that would sustain you , you might rest in some kind of a nest or
+				shelter, and you might engage in courtship rituals. The bearded vulture, for instance, uses
+				cosmetics to
+				enhance his status within his society. He rubs red clay into his feathers to signify to his
+				prospective
+				partners that he simply must be a great hunter since he has all this time for makeup (OConnell,
+				2014).
+				Similarly, the white-spotted pufferfish spends ages creating intricate sand decorations on the
+				bottom of
+				the ocean in hopes of attracting a mate that would appreciate his craftsmanship (Safi, 2023). There
+				are
+				plenty of animals that engage in similar rituals and many who lean into the art of decorating one’s
+				spaces, e.g. through collecting precious materials. Crows, ravens and bower birds are all devoted
+				collectors (Lotzof, n.d.).
+			</p>
+
+
+			<p>
+
+				Decorating our habitats is often a way to signify to others a certain status or agenda. You can see
+				a
+				clear example of this by looking at religious monuments in human societies: which are often
+				plastered
+				with all sorts of signage and symbols to broadcast and emphazise their religious dogmas (Jason,
+				2025).
+				When looking at other sites, such as achitecture in built societies of the Global North<sup id="ref23"
+					class="footnote-ref">23</sup>, we can see more ways in which status is promoted. In
+				recent history,
+				wealth is often expressed through the size and location of a building, and quality of materials
+				used.
+				Before the onset and effects of Modernism, it was often expressed through craftsmanship and
+				complexity
+				of the construction, and often times through décor and ornamentation.
+				A common motif was nature; either as direct representations of a natural subject or more indirectly
+				so;
+				as shapes and constructions following the signature branching patterns of nature. Ornate ironwork
+				can
+				look like branching trees or twisting vines, and rose windows in churches often resemble the
+				structure
+				of sea urchins or the insides of flowers. They also look like the sand-art of the pufferfish, which
+				could itself be a rendering of
+				a halved kiwi or an orange.
+			</p>
+
+			<br><br>
+
+			<h2 id="ARCHITECTURE & NEUROSCIENCE"><i>ARCHITECTURE & NEUROSCIENCE</i></h2>
+			<p>
+
+				It‘s worth noting the irony of post-embedding imitations of nature into built environ-ments:
+				Stripping
+				the natural landscape of its organic materials and using them to build said environments, only to
+				reincorporate them as natural motifs in ornamentation... Perhaps the popularity in the use of the
+				natural motif was in some way an effort to replace the nature that was lost, maybe in some sort of
+				ancestral self-remembrance<sup id="ref24" class="footnote-ref">24</sup>, or maybe because they
+				simply
+				found it beautiful.
+				It certainly evokes a lot of questions. If it was because they found it beautiful, is it because it
+				depicts nature and we find natural elements beautiful? And if we find natural elements beautiful, is
+				it
+				because we resonate with them? And is that because we see ourselves in it? If we are nature, do
+				depictions of nature count as self-portraiture?
+			</p>
+			<p>
+				Thankfully, there’s been substantial research done on environmental psychology and neuroscience in
+				the
+				last years, and some of its findings could potentially shed light on our inquiries. Scientists have
+				studied human perception of fractals and made the link between our evolving in a rugged, bumpy and
+				fractal landscape, to an inherent and familiar appreciation of the fractal form or formulas<sup
+					id="ref25" class="footnote-ref">25</sup>
+				(Austigard, 2023). When applying this to the designed landscape, they also found that people’s
+				pleasure
+				in looking at built environments correlates with increased complexity of silhouettes of objects and
+				buildings. Increased complexity also aids in our wayfinding and processing of these landscapes,
+				since
+				detailed and diverse environments help us better understand and navigate through them (Stamps,
+				1999).
+				Humans have also proven to be preferential towards symmetrical and repetitive forms, which are
+				characteristic across organic subjects and natural environments (Robles et al., 2020).
+			</p>
+
+			<br><br><br><br><br><br>
+
+			<h4 id="chapter-3">US in the ANTHROPOCAPITALOCENE</h4>
+
+			<h2 id="The OTHERING of NATURE"><i>The OTHERING of NATURE</i></h2>
+			<p>
+				For most of our history, humans (more or less) saw the natural world as a vibrant organism, where
+				the
+				human was only one aspect of the organism’s overall functioning, and engaged in non-hierarchical
+				relations with other members of the group<sup id="ref26" class="footnote-ref">26</sup>. Rapid
+				acceleration in
+				sciences in Western Europe in the midle of the previous millenium caused a profound (and lasting)
+				shift
+				in how we view and situate ourselves within the natural world. During the Enlightenment and with the
+				Scientific Revolution, the organism had become more like a machine, with parts to be taken apart and
+				studied<sup id="ref27" class="footnote-ref">27</sup> (Pierre
+				et al., 2019), while the active landscape got demoted to a background of human activities (Tsing,
+				2015).
+				This proved to be the beginning of our (conceived) separation from nature. “Perhaps this was an
+				inevitable outcome: By seeing the natural world as something to be held at arm’s length and studied
+				objectively, we removed ourselves from our own picture of nature” (Kosinski, 2020). We no longer saw
+				ourselves within an unbounded and uncontrollable cosmos, the complex and mysterious, magically
+				enchanted
+				and larger-than-human organic world, but rather as governors of a quantifiable, controllable,
+				exploitable and commodifiable resource. As Earth-centered values were replaced with humanistic ones,
+				the
+				Western human man was put on the very top of the hierarchy. Phenomena deemed opaque or irrational
+				were
+				increasingly devalued in this new rationalist world; such as the natural, the spiritual, the
+				emotional,
+				and the female. Some argue that this is when Modernity began (Pierre et al., 2019) and even some
+				that
+				this marked a new chapter in our geological history<sup id="ref28" class="footnote-ref">28</sup>
+				(Demos,
+				2017).
+			</p>
+
+
+			<p>
+				
+				In the first chapter, we briefly mentioned the parasitic relationship between built societies and
+				their
+				rural surroundings, which they use to supply their energy and sustenance. This relationship creates
+				a
+				power imbalance between its members, where the agents of said rural surroundings become the
+				provider;
+				and in the built society, the consumer (de Landa, 1977). Who gets to play which role is determined
+				by
+				colonialist and imperialist forces–inspired by humanistic values inherited from the Scientific
+				Revolution–which decide what parts of the landscape should be considered resources, and what parts
+				can
+				be inhabited. These systems usually and unfortunately, place the Global North at the top of the
+				hierarchy while the Global South<sup id="ref29" class="footnote-ref">29</sup>
+				operates as their fuel system. More often than not, this leads to ruthless and exploitative
+				extractive
+				practices of these landscapes and their inhabitants, which results in forced labor and ecological
+				catastrophes<sup id="ref30" class="footnote-ref">30</sup>. However, these practices are far from
+				localized in the
+				Global South only (Pierre et al., 2019).
+			</p>
+
+			<sup id="img7" class="image-ref"></sup>
+			<br><br>
+
+			<h2 id="The ANTHROPOCAPITALOCENE"><i>The ANTHROPOCAPITALOCENE</i></h2>
+			<p>
+				
+				Today, a huge portion of Earth’s natural landscapes has been turned into a resource. Humans manage
+				three
+				quarters of all land outside the ice sheets, and almost half of our planet’s habitable land is used
+				for
+				agriculture (Globaïa, 2009). The claiming, clearing, and cultivation of these lands in the pursuit
+				of
+				profit, have created enormous devastation on an unimaginable scale, both for the lifeforms involved,
+				and
+				the ecosystems that encompass and sustain them. The catastrophic impacts are almost countless: we’re
+				currently experiencing rising temperatures, melting ice caps, thawing permafrost, and ocean
+				acidification (Edwards, Graulund & Höglund, 2022). It’s also
+				<i>“extraordinary burdens of toxic chemistry, mining, nuclear pollution, depletion of lakes and
+					rivers
+					under and above ground, ecosystem simplification, vast genocides of people and other critters,
+					[…]
+					in systemically linked patterns that threaten major system collapse after major system collapse
+					after major system collapse” </i>
+
+				(Haraway, 2016, p. 100).
+			</p>
+			<p>
+				Not only have forces of human existence altered Earth’s cycles (Globaïa, 2009), but also overwhelmed
+				all
+				other biological, geological, and meteorological forms and forces and became the determinate form of
+				our
+				planetary existence. Many would like to label this event the controversial Anthropocene––or the age
+				of
+				the New Human<sup id="ref31" class="footnote-ref">31</sup>
+				(Povinelli, 2017). This terminology, though initially seeming fitting for the circumstance, has
+				since
+				been a matter of heated debate among scientists & researchers (Zhong, 2024), as it pins blame on all
+				humans which is neither fair nor true––and frankly, kind of a cop-out for the true powers at hand.
+				Writer TJ Demos, in his book Against the Anthropocene, dismisses this term as asymmetric and
+				inherently wrong (Demos, 2017).
+			</p>
+			<p>
+				It’s imperative to mention that the most dominant force in all this destruction have without a doubt
+				been the forces of corporate industry, which not-so-coincidentally have most to lose if we’d head
+				for a
+				more environmentally friendly route of planetary existence. Here, Demos points towards indigenous
+				practices and states that the corporate facilitators of planetary destruction shift blame towards
+				the
+				individual. In fact, the corporate and financial elites and growth-obsessed leaders of the
+				petrocapitalist industry do everything in their power to keep humans on the same path, by using
+				their
+				financial and media resources to <i>“manipulate governments through corporate lobbying</i><sup
+					id="ref32" class="footnote-ref">32</sup>
+				<i>remove sustainable energy options from even entering the discussion, fund climate change deniers,
+					and
+					advocate for continued large-scale and extreme fossil fuel extraction”</i> (Demos, 2017, p. 29).
+				Because of this, many prefer the more appropriate name Capitalocene<sup id="ref33"
+					class="footnote-ref">33</sup>; as it
+				exposes the culprit in its name and highlights the “economic determination of our geological
+				present”
+				(Demos, 2017, p. 55). Many more terms have been used to describe this period, which all say too much
+				and
+				too little at the same time. I propose a sort of amalgamation of the two we’ve already mentioned:
+				<i>“the AnthropoCapitalocene”</i>, a handy term which simultaneously opens up, and names and blames
+				in
+				all the right places.
+				<sup id="img8" class="image-ref"></sup>
+			</p>
+			
+			<br><br>
+			
+			<h2 id="EARTH, REVISED & UNRAVELLED"><i>EARTH, REVISED & UNRAVELLED</i></h2>
+
+
+			<p>
+				
+				Nature’s revised definition as a machine quickly spread to other levels of Western human existence,
+				and
+				while the landscape became a resource, humans got commodified as workers. The Industrial
+				Revolution<sup id="ref34" class="footnote-ref">34</sup>
+				produced many mechanisms and phenomena that sped up the machine’s production while lowering costs,
+				such
+				as factories, assembly lines<sup id="ref35" class="footnote-ref">35</sup>, and mass production. For
+				the
+				first time,
+				factories rendered humans capable of existing independently outside of their farmlands (and
+				comparable
+				ecosystems). Even though the work was both hazardous and incredibly monotonous for the workers, it
+				generated immense profits for the factory owners, who prioritized production and profit over all
+				else.
+				Their management of the workers’ labour was rooted in efficiency, utility and optimization<sup
+					id="ref36" class="footnote-ref">36</sup>
+				; and both introduced & solidified the human-work relationship we experience today. Not to mention
+				the
+				incredibly destructive impact the industrialization had on Earth’s systems, which many tie to the
+				beginning of the AnthropoCapitalocene. While mass production of goods made them more accessible and
+				affordable, they became standardized and subsequently simplified (Rafferty, 2017). In many ways, the
+				utilization and standardization of the West stripped the landscape of its superficial layers and
+				revealed a sterile, homogenous terrain, critically lacking in diversity, in all senses of the word.
+			</p>
+
+			<p>
+				<sup id="img9" class="image-ref"></sup>
+				Naturally, the accelerating destruction and alteration, automattion, standardization, monetization,
+				rationalization & utilization of Earth in the last 300 or so years, has led to many cycles of
+				opposition. It’s also been the root cause behind an ongoing conversation in art and design fields. A
+				hundred years into the effects of the Industrial Revolution, we saw the Arts & Crafts movement in
+				Great
+				Britain (and North America); a direct response to the industrialization of Europe, which advocated
+				for a
+				return to nature<sup id="ref37" class="footnote-ref">37</sup>
+				and traditional craftsmanship in rejection to mass production. Shortly after, it was Art Nouveau in
+				France, Jugendstil in Germany, and many others. In one way or another, these movements promoted
+				nature
+				and the natural form, which they used for inspiration, and as a guide or grid system<sup id="ref38"
+					class="footnote-ref">38</sup> in their various creations. Their vision was
+				translated into ornamental forms across medias, which helped the jagged, organic line we love and
+				adore,
+				flow seamlessly from nature into built society, and bridge the gap between the organic- & strikingly
+				mechanical landscapes. Modernism emerged as a reaction against these movements<sup id="ref39"
+					class="footnote-ref">39</sup>, and sought to unify the landscape through subtraction and
+				simplification. The rugged, flowing line flattened out, and the grid became rigid, straight and
+				synthetic. Natural references were exiled under utilitarian Modernism, and ornaments and other
+				decorative parts were served cease-and-desist<sup id="ref40" class="footnote-ref">40</sup>
+				orders (Pierre et al., 2019). And while wildflowers got mowed from monoculture landscapes & species
+				found themselves in a mass extinction (Morton, 2021), it’s almost like they were never there.
+			</p>
+
+			<div class="quote">
+				<i>
+					“The ornamental reminds us that life is more whole than the divisions of leisure <br>
+					and work, useful and decoration, business and pleasure, or individual and com- <br>
+					munal, as it resists the reduction of life and value to what is utilizable […] <br>
+					It’s an elusive antithesis to singularity, objectivity, effectiveness”</i>
+				<p>(Ehde & Rafstedt, 2019).</p>
+			</div>
+			<p>
+				Of course, this is only a small fraction of the vast discourse on the past, present and futures of
+				terrestrial beings and systems in the AnthroCapitalocene, and many have taken far more radical
+				measures
+				in promoting nature and advocating for environmental action. In recent years, we’ve witnessed
+				large-scale climate activism, such as the global Fridays for Future school strikes initiated by
+				Greta
+				Thunberg (Fridays for Future, n.d.); Indigenous-led efforts to protect land and water in the Amazon
+				rainforest<sup id="ref41" class="footnote-ref">41</sup>
+				(Amazon Frontlines, 2019); Extinction Rebellion’s fierce protests against fossil fuel projects in
+				Germany and the Netherlands<sup id="ref42" class="footnote-ref">42</sup> (Extinction Rebellion,
+				n.d.),
+				and numerous
+				legal cases recognizing the rights of nature (Freedman, 2024).
+			</p>
+
+			<br><br><br><br><br><br>
+
+			<h4 id="chapter-4">US as EVERYTHING</h4>
+
+			<h2 id="STORYTELLING as WORLD-BUILDING"><i>STORYTELLING as WORLD-BUILDING</i></h2>
+			<p>
+				Little by little, the conversations we have about the world end up amounting to the world itself. We
+				create it by speaking it into existence, and through it, decide who is and is not part of the story.
+				Author Ursula K. Le Guin famously describes this story-making and history-making<sup id="ref43"
+					class="footnote-ref">43</sup> as an
+				accumulative process of gathering stories in bags–which, throughout human history, has proved
+				preferential to hu-man<sup id="ref44" class="footnote-ref">44</sup>
+				centric, western-centric, heroic and action-packed narratives, over accounts of delicate care and
+				companionship, motherhood and many layered complexities of Earthly existence (Le Guin, 1986).
+			</p>
+
+			<div class="quote">
+				<i>
+					“Where is that wonderful, big, long, hard thing, a bone, I believe, that the <br>
+					Ape Man first bashed somebody in the movie and then, grunting with ecstasy <br>
+					at having achieved the first proper murder, flung up into the sky, and whir-<br>
+					ling there it became a space ship thrusting its way into the cosmos to fer-<br>
+					tilize it and produce at the end of the movie a lovely fetus, a boy of course, <br>
+					drifting around the Milky Way without (oddly enough) <br>
+					any womb, any matrix at all?” </i>
+				<p>(ibid., p. 167).</p>
+			</div>
+
+			<p>
+				Other stories become just other stories when they get reduced to supporting acts for the hero.
+				Ironically, the hero in our Anthropocene-story is not humanity and not even hu-man, but a tiny
+				sliver of
+				egotistically profit-driven hu-men or entities. And the victor writes the history and all that. We
+				must
+				be generous in what stories we gather in our bags; what kinds of stories and of whom and from which
+				perspectives.
+			</p>
+
+			<div class="quote">
+				<i>“It matters what stories make worlds & what worlds make stories”</i><br>
+				<p>(Haraway, 2016, p. 35).</p>
+			</div>
+			<p>
+				One way of telling the story of the AnthropoCapitalocene would be of a heroic battle between hu-man
+				and
+				nature, where man won the war and harnessed the powers of nature to use in his divine quest for
+				redemption. It’s also a story of an indigenous person whose home got swallowed by petro-chemical
+				infrastructures, displacing her whole community and permanently destroying her health<sup id="ref45"
+					class="footnote-ref">45</sup>
+				(Demos, 2017). Earthlings in some subtropical grasslands might know it as the event where everything
+				they thought they knew about their section of the world got turned on its head and collapsed
+				(Rosane,
+				2020). For more than two million species it’s probably nothing short of Armageddon, but since
+				they’re
+				now extinct they can’t really share their stories (Odenthal & Suner, n.d.). Of course, there’s too
+				many
+				stories to possibly condense into a singular narrative, and that’s exactly the point. We have to
+				allow
+				more stories and more points of views to enter the discussion, not only human but, and especially,
+				all
+				terrestrial species<sup id="ref46" class="footnote-ref">46</sup>. And we must reject the hu-man
+				exceptionalist-,
+				anthropomorphic<sup id="ref47" class="footnote-ref">47</sup> and anthropocentric<sup id="ref48"
+					class="footnote-ref">48</sup> point of
+				view, if we want to keep on telling the story. “A common livable world must be composed, bit by bit,
+				or
+				not at all” (Latour, 2010, p. 473).
+			</p>
+			<p>
+				Like in Dr. Seuss’ fable, we must use our agency to give voice to the other and speak worlds beyond
+				ours
+				into collective existence. Seuss’ story–though fictional and totally anthropo-<br>morphic–represents
+				a
+				type of alternative storytelling,<sup id="ref49" class="footnote-ref">49</sup> which is another
+				thing we
+				absolutely
+				must do. We must tell more stories; fictional, autobiographical, scientific, pretend and
+				make-believe,
+				critical and speculative, mediocre and fantastical stories; through writing, painting, film- and
+				music-making, note-taking, speaking into existence and scribbling on a wall; stories of what was and
+				will be, what could be, what shouldn’t be, what is and is not. This is how we create the world, and
+				also
+				how we change it. Regardless of their nature, regular-human stories are still
+				terrestrial-being-stories,
+				world-making and world-changing stories.
+			</p>
+
+			<br><br>
+
+
+			<h2 id="METAMORPHOSIS"><i>METAMORPHOSIS</i></h2>
+			<p>
+				Semiotics play a huge role in storytelling. Either I did something, or you did something, or maybe
+				they
+				did it, or maybe we did. Like with the bag and the bone and with othering others, when talking about
+				us,
+				we exclude them from the story. In the context of this chapter, or chapter title, us could be you &
+				me<sup id="ref50" class="footnote-ref">50</sup>, or
+				all of humankind, or a section of humanity in a specific circumstance, or more than humanity.
+				Evolutionary biologist W.D. Hamilton found that the closer we<sup id="ref51"
+					class="footnote-ref">51</sup> feel towards another member of any species, the more willing we
+				are to
+				protect and
+				care for them<sup id="ref52" class="footnote-ref">52</sup> (Hamilton, 1964). I can’t help but wonder
+				what would happen
+				if we stretched the notion of us so far that it’d encompass all lifeforms with and outside of our
+				own.
+				In theory, it could generate a lot more empathy, a crucial ingredient for moving past the
+				AnthropoCapitalocene.
+			</p>
+
+			<div class="quote">
+				<i>
+					“When you were dying, you knew I’d fight for you <br>
+					if I thought I was dying too”</i>
+				<sup id="ref53" class="footnote-ref">53</sup>
+
+				<p>(Shore, 2007)</p>
+			</div>
+
+			<p>
+				For Donna Haraway, this is how we “make kin” with one another. By embracing the relations between us
+				terrestrial species and bringing other lifeforms into our notion of us. Etymologically speaking, kin
+				stands for relations with–often as family or chosen family. So, when we refer to our family of human
+				species, we become human-kin, or humankind. Haraway suggests that when referring to our extended
+				family
+				members, we can call them Earth-kin/Earthkin, since all of us Earthlings are kin in the deepest
+				sense of
+				the word<sup id="ref54" class="footnote-ref">54</sup>
+				And by considering the multiplicity of us entangled Earthlings, we engage in tentacular thinking
+				about
+				and with the world.<sup id="ref55" class="footnote-ref">55</sup> The word for world being, in this
+				context, the fluid
+				and flourishing, interconnected, non-binary and non-linear, intricately yet indeterminably woven web
+				of
+				life on Earth. There are no shortcuts when it comes to world-making, the only way is through. There
+				are
+				many steps required for moving past the AnthropoCapitalocene, too many for a subsection of a
+				singular
+				species or entity, and emerging into the other side requires making kin in the current world.
+				Collectively, we can evoke an entangled and tentacular world, the Cthulucene,<sup id="ref56"
+					class="footnote-ref">56</sup> perhaps (Haraway, 2016).
+			</p>
+
+			<div class="quote">
+				<i>
+					“It sometimes seems that the story is approaching its end. Lest there be no <br>
+					more telling of stories at all […] I think we’d better start telling another <br>
+					one, which maybe people can go on with when the old one’s finished. Maybe. <br>
+					The trouble is, we’ve all let ourselves become part of the killer story, and <br>
+					so we may get finished along with it. Hence it is with a certain feeling of <br>
+					urgency that I seek the nature, subject, words of the other story,<br>
+					the untold one, the life story” </i>
+				<p>(Le Guin, 1986, p. 169).</p>
+			</div>
+
+			<br><br>
+
+			<h4 id="epilogue">EPILOGUE</h4>
+			<p>
+				At the end of the hero-story in the action-movie, the daring protagonist blows up the building with
+				the
+				bad guys in it and flees the scorched-Earth remnants of the planet in his Ark or spaceship, to
+				someplace
+				where the grass is greener, with his dear ones aboard, and to hell with all that’s left behind, if
+				it
+				doesn’t contribute to his story. But his imagined elsewhere is only a mirage, and no one told him
+				that
+				escapist fantasies make futile exit strategies, and that he’s rendered useless without Earth’s soil
+				and
+				place within its cyclical life-sustaining systems. And so, as it tends to, the life-story carries on
+				in
+				his absence; weaving tales about tube worms in hydrothermal vents on ocean floors, spiders on
+				mountains,
+				and natures breaking through cement landscapes. He should’ve known that every end of a successful
+				hero’s
+				journey requires a return to origins, reconciliation and mourning, reparation and renewal. The
+				continuation of his story depends on weaving it in with and acknowledging it as part of the original
+				story, the life-story, the entangled multi-species story of life on his home planet. Only from this
+				recognition can he move forward, not as a glorious victor but a humble participant in a shared,
+				intertwined world. The grass on his side is already green enough, he just needs to water it ⚘
+			</p>
+			<!-- ⚘ ❋✽ ꧂꧁ -->
+
+			<br><br><br><br><br><br>
+
+			<h4 id="colophon">COLOPHON</h4>
+
+			<p>
+				Heartfelt thanks to my dear parents and my siblings, to Fusun, Thomas, Francois, Pati, Joana,
+				Balázs,
+				Alessandro... : for profound insight and endless inspiration, guidance, care and companionship...
+				<br><br>
+				Fonts in use: Instrument, Sentient, Courier... <br><br>
+				Royal Academy of Arts the Hague, Graphic Design department <br><br>
+				Bachelor Thesis 2025 <br><br>
+				Written by Dagný Rósa Vignisdóttir <br><br>
+				Guided by Fusun Tur...
+			</p>
 
 		</div>
 
-		<!-- end webpage content -->
 
-	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- All of the footnotes here -->
+		<div class="jimFootnoteCont">
+
+			<p class="margin-note" id="note1">
+				1. <i>You</i> as the reader of this thesis.
+			</p>
+			<p class="margin-note" id="note2">
+				2. You contain the same organ system as nearly 100% of vertebrates alive today (mammals, birds,
+				reptiles, amphibians, fish), and some with invertebrates (insects, mollusks, arthropods) (Mileham,
+				R.,
+				n.d.).
+			</p>
+			<p class="margin-note" id="note3">
+				3. Earthkin refers to the assemblage of all organic species and lifeforms on Earth, a term that was
+				popularized by eco-feminist scholar and philosopher Donna Haraway.
+			</p>
+			<p class="margin-note" id="note4">
+				4. Earth is 4.5 billion years old.
+			</p>
+			<p class="margin-note" id="note5">
+				5. LUCA’s descendants can be grouped into two domains of cellular life: prokaryotes (simply celled
+				organisms like bacteria & archaea) & eukaryotes (all forms of complex multicellular life) (Lambert,
+				2024).
+			</p>
+			<p class="margin-note" id="note6">
+				6. All known life on Earth is carbon-based, including you (Fortey, 2025).
+			</p>
+			<p class="margin-note" id="note7">
+				7. Referring to the oxygen levels in the ocean.
+			</p>
+			<p class="margin-note" id="note8">
+				8. More like washed into the soup, due to a major rise in sea level, which brought life-sustaining
+				materials from land to sea (Fox, 2024).
+			</p>
+			<p class="margin-note" id="note9">
+				9. The primordial soup (also known as prebiotic soup or primitive broth) is a “generic term that
+				describes the aqueous solution of organic compounds that accumulated in primitive water bodies of
+				the
+				early Earth as a result of endogenous abiotic syntheses and the extraterrestrial delivery by
+				cometary
+				and meteoritic collisions, and from which some have assumed that the first living systems evolved”
+				(Bada
+				& Lazcano, 2002).
+			</p>
+			<p class="margin-note" id="note10">
+				10. And fungi, of course.
+			</p>
+			<p class="margin-note" id="note11">
+				11. Ecosystems vary in size: some are small enough to be contained within a single droplet of water,
+				while others are large enough to encompass entire landscapes and regions (Encyclopedia Britannica,
+				2025).
+			</p>
+			<p class="margin-note" id="note12">
+				12. A biome is the largest geographic biotic unit, a major community of plants and animals with
+				similar
+				life forms and environmental conditions (Encyclopedia Britannica, 2025).
+			</p>
+			<p class="margin-note" id="note13">
+				13. An agent is a being with the capacity to act and make decisions. It’s anyone or anything with
+				agency
+				(or free will).
+			</p>
+			<p class="margin-note" id="note14">
+				14. A parasitic relationship is when one species benefits and the other one is harmed, and a
+				commensalist relationship is when one side benefits and the other remains indifferent (Encyclopedia
+				Britannica, 2025).
+			</p>
+			<p class="margin-note" id="note15">
+				15. Coined by ecologist and philosopher David Abram, more-than-human refers to the qualities or
+				attributes found in nature which include but exceed those of human beings: for example, sentience,
+				emotion, intelligence, purpose and agency. By using the words more-than, instead of other-than or
+				non-,
+				it challenges human-centric narratives when writing about more-than-humans (Abram, 1996).
+			</p>
+			<p class="margin-note" id="note16">
+				16. Currently estimated at around ten to thirty million species (Ayla, 2025).
+			</p>
+			<p class="margin-note" id="note17">
+				17. Or our structure.
+			</p>
+			<p class="margin-note" id="note18">
+				18. Fractals are one of many universal formulas that guide the structure of our universe, along with
+				the
+				Fibonacci sequence, the Golden Ratio, Pi (π), Euler’s Number (e), and more (Patra, 2018).
+			</p>
+			<p class="margin-note" id="note19">
+				19. Though many have observed and described the fractal phenomena, fractals were officially
+				discovered
+				by mathematician Benoit Mandelbrot, who described them in his scientific casebook or manifesto,
+				titled
+				The Fractal Geometry of Nature. “I coined fractal from the Latin adjective fractus. The
+				corresponding
+				Latin verb frangere means “to break:” to create irregular fragments. It is therefore sensible—and
+				how
+				appropriate for our needs!—that, in addition to “fragmented” (as in fraction or refraction), fractus
+				should also mean “irregular,” both meanings being preserved in fragment” (Mandelbrot, 1977).
+			</p>
+			<p class="margin-note" id="note20">
+				20. The first description of a fractal pattern in nature might have come from the Renaissance artist
+				and
+				scientist Leonardo da Vinci, who noted that “All the branches of a tree at every stage of its height
+				when put together are equal in thickness to the trunk [below them]” (Hennings & Lynch, 2024).
+			</p>
+			<p class="margin-note" id="note21">
+				21. As a human, as a lifeform.
+			</p>
+			<p class="margin-note" id="note22">
+				22. Often found in grocery stores these days.
+			</p>
+			<p class="margin-note" id="note23">
+				23. The Global North is a term used to describe the industrialized nations in the northern
+				hemisphere,
+				which are often times the overall benefactors of global capitalism.
+			</p>
+			<p class="margin-note" id="note24">
+				24. Referring to humans living in richer natural ecosystems.
+			</p>
+			<p class="margin-note" id="note25">
+				25. “There’s a surprising tendecy towards fractals being in the range of 1.3 to 1.5 (D=1.3-1.5),
+				everywhere. From molecules to planetary systems. The fractal dimension that generates the most
+				pleasure
+				in people is between 1.3 and 1.5 (D=1.3-1.5), which is not a big surprise, because we are, through
+				evolution, adapted to functioning well in this environment. It’s only natural that this is what we
+				find
+				beautiful” (Austigard, 2023).
+			</p>
+			<p class="margin-note" id="note26">
+				26. Apart from natural pecking orders like prey/predator relationships.
+			</p>
+			<p class="margin-note" id="note27">
+				27. By doing so, scholars and scientists believed they could fully decode the workings of the
+				natural
+				world (Kosinski, 2020).
+			</p>
+			<p class="margin-note" id="note28">
+				28. Many scientists argue that the human induced changes to Earth’s geological systems are enough to
+				consider it a geological epoch (Demos, 2017).
+			</p>
+			<p class="margin-note" id="note29">
+				29. The Global South is a term used to describe less industrialized nations in the southern
+				hemisphere,
+				which are often times the victims of global capitalism.
+			</p>
+			<p class="margin-note" id="note30">
+				30. Donna Haraway describes this event as the Plantation-o-cene, or Plantationocene (Haraway, 2016).
+			</p>
+			<p class="margin-note" id="note31">
+				31. Coined by biologist Eugene Stoermer and popularized by chemist Paul Crutzen in 2000. Anthropo-,
+				a
+				prefix meaning human, humanoid, or human-like, and -cene as being new (Demos, 2017).
+			</p>
+			<p class="margin-note" id="note32">
+				32. “Total oil and gas lobby spending in 2015 in the United States was an astounding $129,876,004,
+				which
+				breaks down into the figure of $355,825 per day, a financial driver that makes sure that renewable
+				energy is kept off the table and safely away from consumers” (Demos, 2017).
+			</p>
+			<p class="margin-note" id="note33">
+				33. Initiated by author and ecologist Andreas Malm and widely used by scholars, scientists &
+				eco-researchers like Donna Haraway, Jason Moore, T. J. Demos, and others in recent years.
+			</p>
+			<p class="margin-note" id="note34">
+				34. The Industrial Revolution originated in Great Britain and lasted from 1760 to around 1830.
+			</p>
+			<p class="margin-note" id="note35">
+				35. Industrialist Henry Ford invented the moving assembly line, and revolutionized factory
+				production
+				forever. However, the line was seen as an insult to skilled craftsmen, and “another example of the
+				overwhelming patriarchal control a company could have over its workers in the age of mass
+				production”
+				(Eschner, 2016).
+			</p>
+			<p class="margin-note" id="note36">
+				36. Engineer Frederick Winslow Taylor was a pioneer in production-optimization-strategies and
+				developed
+				Taylorism, a popular method of industrial management designed to increase efficiency and
+				productivity,
+				where workflows and work processes are examined and optimized to reduce costs and increase quality
+				(Munich Business School, n.d.).
+			</p>
+			<p class="margin-note" id="note37">
+				37. See: William Morris’ art and fiction writing, which envisions a world where humans are
+				integrated
+				with all of nature.
+			</p>
+			<p class="margin-note" id="note38">
+				38. A grid system is a visual guide that is used to organize and align elements within a design.
+			</p>
+			<p class="margin-note" id="note39">
+				39. And as a reaction to the World Wars and accelerating industrialization.
+			</p>
+			<p class="margin-note" id="note40">
+				40. Modernist architect Adolf Loos famously exiled ornaments and decoration with his manifesto
+				Ornament
+				and Crime in 1908, whose radical ideas significantly influenced the development of modernist visual
+				landscapes.
+			</p>
+			<p class="margin-note" id="note41">
+				41. In 2019 in Ecuador, the Waorani people of Pastaza won a historic ruling in Ecuadorian court,
+				protecting half a million acres of their territory in the Amazon rainforest from being earmarked for
+				oil
+				drilling (Amazon Frontlines, 2019).
+			</p>
+			<p class="margin-note" id="note42">
+				42. Extinction Rebellion says this on their website: “This is an Emergency. Our climate is changing
+				faster than we predicted, and those in power have failed to act. Extinction Rebellion is demanding
+				fair
+				and transparent change, to ensure the future of all life on Earth” (Extinction Rebellion, n.d.).
+			</p>
+			<p class="margin-note" id="note43">
+				43. Or his-story-making?
+			</p>
+			<p class="margin-note" id="note44">
+				44. I propose a distinction between human and hu-man: where the former refers to any individual of
+				the
+				human species, while the latter represents a Western, male-centric and idealized reproduction of a
+				hu-man individual.
+			</p>
+			<p class="margin-note" id="note45">
+				45. “The situation of environmental injustice is similar elsewhere: like the Athabasca Chipewyan,
+				minority and low income communities living on the edges of the massive petro-chemical infrastructure
+				in
+				Houston suffer greatly elevated risks of contracting leukemia and cancers owing to exposure to oil
+				industry pollution” (Demos, 2017, pp. 28-29).
+			</p>
+			<p class="margin-note" id="note46">
+				46. Anthropologist and philosopher Bruno Latour calls these stories Earth stories, Gaïa stories or
+				geostories: where all formerly passive agents of nature become active, as part of the story
+				(Haraway,
+				2016).
+			</p>
+			<p class="margin-note" id="note47">
+				47. A phenomena is anthropomorphic when it has a human form or human attributes.
+			</p>
+			<p class="margin-note" id="note48">
+				48. Anthropocentric means human-centric and refers to the view of humans being the central, most
+				important element of existence.
+			</p>
+			<p class="margin-note" id="note49">
+				49. “Alternative Narratives encompass a spectrum of voices, experiences, and viewpoints that diverge
+				from dominant narratives prevalent in society” (The Oxford Review, n.d.).
+			</p>
+			<p class="margin-note" id="note50">
+				50. As the reader and the writer.
+			</p>
+			<p class="margin-note" id="note51">
+				51. As humans.
+			</p>
+			<p class="margin-note" id="note52">
+				52. And perceived closeness surpasses genealogical relations.
+			</p>
+			<p class="margin-note" id="note53">
+				53. Dr. Cameron to Dr. Foreman in tv series House (S4ep06).
+			</p>
+			<p class="margin-note" id="note54">
+				54. “All critters share a common “flesh,” laterally, semiotically, and genealogically” (Haraway,
+				2016,
+				103).
+			</p>
+			<p class="margin-note" id="note55">
+				55. “Tentacularity is about the myriad of entangled ways of being.” (Haraway, 2016, 32). Her
+				“tentacular-ity” is inspired by tentacled creatures like octopuses and spiders, which weave
+				intricate,
+				networked relationships rather than following linear, human-centric modes of thinking. Tentacular
+				thinking is the opposite of rigid, individualistic, and anthropocentric worldviews. At it’s core,
+				tentacular thinking is non-anthropocentic ecological thinking.
+
+			</p>
+			<p class="margin-note" id="note56">
+				56. Not to be confused with HP Lovecraft’s “Call of Cthulhu”, although linked through the notion of
+				evoking something tentacular and beyond human control. Haraway’s “Cthulu” is derived from
+				“chthonic”,
+				meaning “of the earth” or “underworld,” referring to deep, ancient, and earthly forces (Haraway,
+				2016).
+			</p>
+
+
+
+		</div>
+
+
+
+	</div>
+
+
+	<!-- <div class="fillerPageEmpty2" id="sources"></div> -->
+
+
+	<div class="Bibliography">
+		<br>
+		<br>
+		<h4 id="sources">BIBLIOGRAPHY</h4>
+		<br>
+		<div class="BibliographyText">
+			Abram, D. (1996). The spell of the sensuous: Perception and language in a more-than-human world. Pantheon
+			Books.<br><br>
+
+			Amazon Frontlines. (2019). A historic victory for Indigenous rights in the Amazon. Amazon Frontlines.
+			<br>https://amazonfrontlines.org/chronicles/waorani-victory/<br><br>
+
+			Ang, C. (2021). How Genetically Similar Are We to Other Life Forms? Visual Capitalist.
+			<br>https://www.visualcapitalist.com/comparing-genetic-similarities-of-various-life-forms/<br><br>
+
+			Austigard, T. (2023). Fractals - The Science Behind Ornaments in Architecture. International Symposium BUA
+			2023. <br>https://www.youtube.com/watch?v=4ulTFv2TL-M&ab_channel=BeautyandUglinessinArchitecture<br><br>
+
+			Ayla, F. J. (2025) Evolution. Encyclopaedia Britannica.
+			<br>https://www.britannica.com/science/evolution-scientific-theory<br><br>
+
+			Bada J, Lazcano, A. (2002). Some like it hot, but not biomolecules. Science (#296). AAAS.<br><br>
+
+			Blake, W. (1863). Auguries of innocence. In A. Gilchrist (Ed.), Life of William Blake. Macmillan.<br><br>
+
+			Bryden, M. A. (2023). An Unlikely Friendship: The Relationship Between Wolves and Ravens. The Land Between.
+			<br>https://www.thelandbetween.ca/2023/09/an-unlikely-friendship-the-relationship-between-wolves-and-ravens/<br><br>
+
+			De Landa, M. (1997). A thousand years of nonlinear history. Zone Books.<br><br>
+
+			Demos, T. J. (2017). Against the Anthropocene: Visual culture and environment today. Sternberg
+			Press.<br><br>
+
+			Edwards, J. D., Graulund, R., & Höglund, J. (2022). Dark Scenes from Damaged Earth: The Gothic Anthropocene.
+			University of Minnesota Press.<br><br>
+
+			Ehde, J. & Rafstedt, E. MsHeresies #2: Useful Work versus Useless Toil. Rietlanden Women’s Office.
+			Self-published.<br><br>
+
+			Encyclopedia Britannica (2025). Ecosystem. Encyclopaedia Britannica.
+			<br>https://www.britannica.com/science/ecosystem<br><br>
+
+			Encyclopedia Britannica (2025). Human Body. Encyclopaedia Britannica.
+			<br>https://www.britannica.com/science/human-body<br><br>
+
+			Encyclopedia Britannica (2025). Mutualism. Encyclopaedia Britannica.
+			<br>https://www.britannica.com/science/mutualism-biology<br><br>
+
+			Encyclopedia Britannica (2025). Symbiosis. Encyclopaedia Britannica.
+			<br>https://www.britannica.com/science/mutualism-biology<br><br>
+
+			Eschner, K. (2016). In 1913, Henry Ford Introduced the Assembly Line: His Workers Hated It. Smithsonian
+			Magazine.
+			<br>https://www.smithsonianmag.com/smart-news/one-hundred-and-three-years-ago-today-henry-ford-introduced-assembly-line-his-workers-hated-it-180961267/<br><br>
+
+			Extinction Rebellion. (n.d.). Blog. Extinction Rebellion. <br>https://rebellion.global/news/#blog<br><br>
+
+			Fortey, I. (2025). Why is All Life Carbon-Based? TopTenz.
+			<br>https://www.toptenz.net/why-is-all-life-carbon-based.php<br><br>
+
+			Fox, D. (2024). What sparked the Cambrian explosion? Scientific American.
+			<br>https://www.scientificamerican.com/article/what-sparked-the-cambrian-explosion1/<br><br>
+
+			Freedman, E. (2024). Nature is getting new legal rights – and winning in court. Wild Hope, Tangled Bank
+			Studios.
+			<br>https://www.wildhope.tv/article/nature-is-getting-new-legal-rights-and-winning-in-court/<br><br>
+
+			Fridays for Future. (n.d.). Who we are. Fridays for Future.
+			<br>https://fridaysforfuture.org/what-we-do/who-we-are/<br><br>
+
+			Globaïa, 2009. Welcome to the Anthropocene. Globaïa. <br>https://globaia.org/anthropocene<br><br>
+
+			Hamilton, W. D. (1964). The Genetical Evolution of Social Behaviour I & II. Journal of Theoretical Biology.
+			Elsevier.<br><br>
+
+			Haraway, D. J. (2016). Staying with the trouble: Making kin in the Chthulucene. Duke University
+			Press.<br><br>
+
+			Hennings, J. & Lynch, H. (2024). Leonardo’s Rule of Trees. Bureau of Economic Geology, University of Texas
+			at Austin. <br>https://www.earthdate.org/episodes/leonardos-rule-of-trees<br><br>
+
+			Jason, A. (2025). Religious Symbols and Symbolism in Sculpture: How Postures, Expressions, and Accessories
+			Convey Deeper Meanings. Medium.<br>
+			https://medium.com/%40inventive_mauve_tortoise_897/religious-symbols-and-symbolism-in-sculpture-how-postures-expressions-and-accessories-convey-7746a35b2314<br><br>
+
+			Kosinski, M. 2020. Au Naturel: How Humans Separated Themselves from Nature — and Why It’s Time to
+			Reconsider. Keap.<br>
+			https://www.keapbk.com/blogs/keap/au-naturel-how-humans-separated-themselves-from-nature-and-why-it-s-time-to-reconsider?srsltid=AfmBOor8hCJyuYywhtue6rY7rWH1KaEYTnV_ft-MSzf__k7LuJLHMQgB<br><br>
+
+			Lambert, R. (2024). All Life on Earth Today Descended From a Single Cell. Meet LUCA. Quanta Magazine.<br>
+			https://www.quantamagazine.org/all-life-on-earth-today-descended-from-a-single-cell-meet-luca-20241120/<br><br>
+
+			Latour, B. (2010). An attempt at a 'compositionist manifesto'. New Literary History, (#41, 3). The Johns
+			Hopkins University Press.<br><br>
+
+			Le Guin, U. K. (1986). The carrier bag theory of fiction. In S. McKee Charnas (Ed.), Women of vision: Essays
+			by women writing science fiction. St. Martin's Press.<br><br>
+
+			Lotzof, K. (N.d.). Curious collectors and hoarders of the animal world. Natural History Museum, London.
+			<br>https://www.nhm.ac.uk/discover/collectors-and-hoarders-of-the-animal-world.html<br><br>
+
+			Mandelbrot, B. B. (1977). The Fractal Geometry of Nature. H. B. Fenn & Company Ltd.<br><br>
+
+			Mileham, R. (n.d.). First animals. Oxford University Museum of Natural History.
+			<br>https://oumnh.ox.ac.uk/learn-first-animals<br><br>
+
+			Morton, T. (2021). All art is ecological. Penguin Books.<br><br>
+
+			Munich Business School. (n.d.). Taylorism. Business Studies Dictionary.<br>
+			https://www.munich-business-school.de/en/l/business-studies-dictionary/taylorism<br><br>
+
+			Neronha, Z. J. (2019). Research shows human cells assembling into fractal-like clusters. Brown University.
+			<br>https://www.brown.edu/news/2019-08-12/fractals<br><br>
+
+			OConnell, R. (2014). 11 Facts About the Bone-Eating Bearded Vulture. Mental Floss.
+			<br>https://www.mentalfloss.com/article/58253/11-facts-about-bone-eating-bearded-vulture<br><br>
+
+			Odenthal, F., & Suner, M. (n.d.). The Anthropocene: Age of Genocide. FairPlanet. Retrieved February 24,
+			2025
+			<br>https://www.fairplanet.org/developing-stories/saving-rhinoceros/the-anthropocene-age-of-genocide/<br><br>
+
+			Patra, I. (2018). Fibonacci sequence, Golden Ratio and Fractal Geometry as the New Dimensionless Constants
+			for Unraveling the Architectonic Principles of the Cosmos. International Journal for Research in
+			Applied<br><br>
+
+			Science & Engineering Technology (#6, 2).<br>
+			https://www.academia.edu/68067728/Fibonacci_sequence_Golden_Ratio_and_Fractal<br>_Geometry_as_the_New_Dimensionless_Constants_for_Unraveling_the_Architectonic<br>_Principles_of_the_Cosmos<br><br>
+
+			Pearce, K. (2024). Fractals In Nature: Develop Your Pattern Recognition Skills. Mindful Ecotourism.<br>
+			https://www.mindfulecotourism.com/fractals-in-nature/<br><br>
+
+			Pierre, L., Fletcher, K. et al. (2019). Design and Nature: A Partnership. Routledge.<br><br>
+
+			Povinelli, E. A. (2017). Geontologies: The concept and its territories. E-flux, (#81).<br>
+			https://www.e-flux.com/journal/81/123372/geontologies-the-concept-and-its-territories/<br><br>
+
+			Rafferty, J. et al. (1998). Comparative anatomy, Definition, Examples, & Facts. Encyclopaedia
+			Britannica.<br>
+			https://www.britannica.com/science/comparative-anatomy<br><br>
+
+			Rafferty, J.P. (2017). The Rise of the Machines: Pros and Cons of the Industrial Revolution. Encyclopaedia
+			Britannica.<br>
+			https://www.britannica.com/story/the-rise-of-the-machines-pros-and-cons-of-the-industrial-revolution<br><br>
+
+			Robles, K. E. et al. (2020). A shared fractal aesthetic across development. Humanities & Social Sciences
+			Communications. Springer Nature. <br>https://www.nature.com/articles/s41599-020-00648-y<br><br>
+
+			Rosane, O. (2020, September 24). Humans destroyed an ecosystem the size of Mexico in just 13 years. World
+			Economic Forum.
+			<br>https://www.weforum.org/stories/2020/09/humans-destroyed-ecosystem-mexico-2000-2013/<br><br>
+
+			Safi, S. (2023). The Amazing Art of the Pufferfish: How a Tiny Fish Creates a Masterpiece to Impress His
+			Mate. Medium.
+			<br>https://sharleezsafi.medium.com/the-amazing-art-of-the-pufferfish-how-a-tiny-fish-creates-a-masterpiece-to-impress-his-mate-d8d14a776b9d<br><br>
+
+			Seuss, D. (1954). Horton hears a Who! Random House.<br><br>
+
+			Shore, D. (Executive Producer). (2007). Whatever It Takes (Season 4, Episode 6) [TV series episode]. In
+			House, M.D. Fox Broadcasting Company.<br><br>
+
+			Stamps, A. (1999). Physical Determinants of Preferences for Residential Facades. Environment and Behavior.
+			Sage Publications.<br><br>
+
+			The Oxford Review. (n.d.). Alternative narratives – definition and explanation. The Oxford Review DEI
+			(Diversity, Equity, and Inclusion) Dictionary.
+			<br>https://oxford-review.com/the-oxford-review-dei-diversity-equity-and-inclusion-dictionary/alternative-narratives-definition-and-explanation/<br><br>
+
+			Truscott, R. (2022). World is losing ‘magical’ tradition of human-animal mutualism, study warns. Mongbay
+			News.
+			<br>https://news.mongabay.com/2022/06/world-is-losing-magical-tradition-of-human-animal-mutualism-study-warns/<br><br>
+
+			Wade, N. (2016). Meet Luca, the Ancestor of All Living Things. The New York Times.
+			<br>https://www.nytimes.com/2016/07/26/science/last-universal-ancestor.html<br><br>
+
+			Zhong, R. (2024). Are We in the ‘Anthropocene,’ the Human Age? Nope, Scientists Say. The New York Times.
+			<br>https://www.nytimes.com/2024/03/05/climate/anthropocene-epoch-vote-rejected.html
+		</div>
+		<br>
+		<br>
+		<h4>IMAGE SOURCES</h4>
+		<br>
+		<div class="BibliographyText">
+			FIG. 1: Haeckel, E. Tree of Life. (1866). Nature. <br>https://www.nature.com/articles/540038a <br><br>
+
+			FIG. 2: Advertisement for the 1970 rendition of Dr. Seuss’ Horton Hears a Who!. (1970). Retro News Now. X.
+			<br>https://x.com/RetroNewsNow/status/1770313632422740193 <br><br>
+
+			FIG. 3: Dagou. Growing up. (2023). [Scan of a Drawing]. Instagram.
+			<br>https://www.instagram.com/p/C0j19HThBzN/ <br><br>
+
+			FIG. 4: BBC. Pufferfish ‘crop circles’. (2014). [Still Frame of a Video]. <br><br>
+
+			FIG. 5: Rose Window of the Notre Dame Cathedral. (2008). [Photograph].
+			<br>https://en.m.wikipedia.org/wiki/File:Rose_du_transept_Sud_Notre-Dame_de_Paris_170208_04.jpg <br><br>
+
+			FIG. 6: Sea Urchin Shell. (2024). [Photograph].
+			<br>https://www.ebay.com.au/str/seagemsstore?fbclid=PAZXh0bgNhZW0CMTEAAaZbiuEJIwDfxYpEIK_<br>nrSnqASuxAzyzGBaCsJ9pTYv1C0qkAs3OpRD8Ll4_aem_Zs7CFv-xmcryOXbD3IRR-A
+			<br><br>
+
+			FIG. 7: Toryota, N. (2025). Wood shaved to fit perfectly into poly bags with chucks. [Photograph].
+			<br>http://nishimotoryota.com/ <br><br>
+
+			FIG. 8: Hôtel Tassel. (N.d.). [Photograph]. Admirables facades de Bruxelles.
+			<br>https://www.admirable-facades.brussels/fr/ <br><br>
+
+			FIG. 9: Lin, J & 3.Paradis. (2019) For Now We See Through A Glass Darkly. [Photograph].
+			<br>https://joyce-lin.com/for-now-we-see-through-a-glass-darkly<br><br>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="jimMenu">
+			<div class="blurLayer"></div> <!-- Blur layer -->
+			<div class="jimMenuText">
+				<div id="chapterDisplay" class="chapter-title"></div>
+
+				<nav>
+					<a href="#abstract" class="menuItem" data-title="Abstract">1</a>
+					<a href="#prologue" class="menuItem" data-title="Prologue">2</a>
+					<a href="#chapter-1" class="menuItem" data-title="A Brief History of You, Me & Everything">3</a>
+					<a href="#chapter-2" class="menuItem"
+						data-title="Courtship Rituals, Neuroscience & Ornamenting as Self Portraiture">4</a>
+					<a href="#chapter-3" class="menuItem" data-title="Us in the AnthropoCapitalocene">5</a>
+					<a href="#chapter-4" class="menuItem" data-title="Us as Everything">6</a>
+					<a href="#epilogue" class="menuItem" data-title="Epilogue">7</a>
+					<a href="#colophon" class="menuItem" data-title="Colophon">8</a>
+					<a href="#sources" class="menuItem" data-title="Bibliography">9</a>
+				</nav>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="assets/js/script.js"></script>
+
+
+</body>
+
+
 
 </html>
