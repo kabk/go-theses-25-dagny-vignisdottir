@@ -182,10 +182,10 @@ h1 {
   font-kerning: normal;
 }
 
-h2, h4, h5, h6 {
+h2, h5, h6 {
   font-family: var(--font-heading);
   font-size: var(--font-size-heading);
-  line-height: 1.2;
+  line-height: 0.6p;
   /*text-align: justify;*/
   justify-content: center;
   width: 75%;
@@ -199,8 +199,27 @@ h2, h4, h5, h6 {
   line-height: inherit; 
   text-rendering: optimizeLegibility; 
   font-kerning: normal;
-
 }
+
+h4 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  line-height: 0.6p;
+  /*text-align: justify;*/
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-weight: normal;
+  line-height: 34px; 
+  text-rendering: optimizeLegibility; 
+  font-kerning: normal;
+}
+
 h3 {
   font-family: var(--font-heading);
   font-size: var(--font-size-body);
@@ -235,10 +254,6 @@ p{
 
 
 
-
-
-
-
 div.page-wrapper {
   /* the element that 'wraps' everything */
   padding: var(--margin);
@@ -266,9 +281,6 @@ header{
 }
 
 
-
-
-
 .desktop-only {
   display: block;
 }
@@ -276,7 +288,6 @@ header{
 .mobile-only {
   display: none;
 }
-
 
 
 .title-container {
@@ -330,8 +341,8 @@ header{
 
 /* -------------------------------------------------------------------- */
 
-/* made a lil menu house */
-.jimMenu {
+/*menu house */
+.Menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,7 +373,7 @@ header{
 }
 
 /* Keep text sharp */
-.jimMenuText {
+.MenuText {
   font-family: var(--font-body);
   font-size: 1.5rem;
   text-align: center;
@@ -384,18 +395,18 @@ header{
   white-space: noWrap;
 }
 
-.jimMenuText nav {
+.MenuText nav {
   display: flex;
   gap: 10px;
 }
 
-.jimMenuText nav a {
+.MenuText nav a {
   text-decoration: none;
   color: inherit;
   font-size: 1.5rem;
 }
 
-.jimMenuText nav a:hover {
+.MenuText nav a:hover {
   font-style: italic;
 }
 
@@ -403,7 +414,7 @@ header{
 
 
 
-.jimMainCont {
+.MainCont {
   position: relative;
   width: 100vw;
   height: auto;
@@ -414,7 +425,7 @@ header{
 }
 
 /* Blur only the background */
-.jimMainCont::before {
+.MainCont::before {
   content: "";
   position: absolute;
   top: 0;
@@ -431,7 +442,7 @@ header{
 
 
 
-.jimImageCont{
+.ImageCont{
   width: 20%;  
   display: flex; /* Optional: Helps align images properly */
   flex-direction: column; /* Stack images vertically */
@@ -443,7 +454,7 @@ padding-right: 10px;
 
 
 
-.jimBodyTextCont{
+.BodyTextCont{
 width: 60%;
 padding-left: 10px;
 padding-right: 10px;
@@ -451,7 +462,7 @@ padding-right: 10px;
 
 }
 
-.jimFootnoteCont{
+.FootnoteCont{
   width: 20%;  
   display: flex; /* Optional: Helps align images properly */
   flex-direction: column; /* Stack images vertically */
@@ -471,7 +482,7 @@ img{
   z-index: 2;;
 }
 
-.jimImageCont img{
+.ImageCont img{
 width: 21vw;
 }
 
@@ -482,7 +493,7 @@ width: auto;
 
 .fig-image:hover{
   
-  transform: scale(1.3);
+  transform: scale(1.4);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
@@ -503,12 +514,11 @@ width: auto;
   padding-top: 10px;
   font-size: 0.8rem;
   position: absolute;
-  padding-right: 20px;
+  padding-right: 22px;
   margin: 0px;
   word-spacing: -0.2rem;
   /* margin-bottom: -1.6rem; */
 }
-
 
 
 
@@ -552,9 +562,9 @@ width: auto;
 
 
 
-.jimIntroText p{
-  margin-top: 20vh;
-  width: 70vw;
+.IntroText p{
+  margin-top: 5.6vh;
+  width: 56.6vw;
 }
 
 .fillerPageEmpty1{
@@ -625,19 +635,16 @@ width: auto;
 
 
 .cover img {
-  margin-top: 3vw;
-  width: 70vw;
-  height: auto; /* Keeps aspect ratio */
+  margin-top: -1vw;
+  /* width: 70vw; */
+  width: 90vw;
+  height: auto; 
   z-index: -2;
   margin-bottom: -20vw;
 
 }
 
-
-
-
-
-.cover-left{
+/* .cover-left{
   opacity: 100%;
   width:320px;
   height: auto;
@@ -667,7 +674,7 @@ width: auto;
   right: 2%;
   transform: translate(0, -50%);
   z-index: -2;
-}
+} */
 
 
 
@@ -675,16 +682,19 @@ width: auto;
   position: fixed;
   top: 10px;
   /* background-color: red; */
-width: 100vw;
-height: 20px;
-z-index: 3;
-display: flex;
-align-content: center;
-text-align: center;
+  width: 100vw;
+  height: 20px;
+  z-index: 3;
+  display: flex;
+  align-content: center;
+  text-align: center;
 
 }
 
 .header-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 15px;
   position: relative;
   margin: auto;
   color: var(--color-text);

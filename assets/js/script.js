@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // **Menu Pop-up Code**
   const menuItems = document.querySelectorAll(".menuItem");
   const chapterDisplay = document.getElementById("chapterDisplay");
-  const jimMenu = document.querySelector(".jimMenu");
+  const Menu = document.querySelector(".Menu");
 
   menuItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  jimMenu.addEventListener("mouseleave", () => {
+  Menu.addEventListener("mouseleave", () => {
     chapterDisplay.textContent = "";
     chapterDisplay.style.display = "none";
   });
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // **Function to update footnote positions**
   function updateFootnotes() {
     const references = document.querySelectorAll(".footnote-ref");
-    const footnoteContainer = document.querySelector(".jimFootnoteCont");
+    const footnoteContainer = document.querySelector(".FootnoteCont");
     let lastFootnoteBottom = 0;
 
     references.forEach((ref) => {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // **Function to update image positions**
   function updateImagePositions() {
     const references = document.querySelectorAll(".image-ref");
-    const imageContainer = document.querySelector(".jimImageCont");
+    const imageContainer = document.querySelector(".ImageCont");
     let lastImageBottom = 0;
 
     references.forEach((ref, index) => {
