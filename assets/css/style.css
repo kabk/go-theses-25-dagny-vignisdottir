@@ -146,7 +146,7 @@ html {
   margin: 0; 
   padding: 0;
   cursor: url('../cursor/asterisk02.png')16 16,auto;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
