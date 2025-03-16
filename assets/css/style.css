@@ -505,9 +505,8 @@ width: auto;
   color: var(--color-text);
 }
 
-.image-ref{
-  /* color: lime; */
-}
+/* .image-ref{
+} */
 
 .margin-note {
   font-family: var(--font-footnotes);
