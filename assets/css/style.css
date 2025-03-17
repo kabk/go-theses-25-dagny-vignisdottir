@@ -146,6 +146,7 @@ html {
   margin: 0; 
   padding: 0;
   cursor: url('../cursor/asterisk02.png')16 16,auto;
+  z-index: 1;
   scroll-behavior: smooth;
 
 }
@@ -492,7 +493,7 @@ width: auto;
 
 
 .fig-image:hover{
-  
+
   transform: scale(1.4);
   transform-origin: left;
   transition: transform 0.3s ease;
