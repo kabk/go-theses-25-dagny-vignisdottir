@@ -148,6 +148,7 @@ html {
   cursor: url('../cursor/asterisk02.png')16 16,auto;
   z-index: 1;
   scroll-behavior: smooth;
+  hyphens: auto;
 
 }
 
@@ -221,6 +222,15 @@ body {
 
   .cover{
     margin-top: 16vh;
+  }
+
+
+  .header-text {
+    font-size: 12px !important;
+  }
+
+  .landingPage {
+    height: 120vh;
   }
 
 }
@@ -680,7 +690,7 @@ width: auto;
   width:100%;
   font-family: var(--font-quote) !important;
   font-size: var(--font-size-quote);
-  line-height: 30px;
+  line-height: 1.3;
   /* margin: var(--margin-body) 20rem; */
   /* padding: 0;
   padding-bottom: 4rem;
