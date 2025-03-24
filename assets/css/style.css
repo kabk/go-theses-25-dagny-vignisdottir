@@ -183,7 +183,7 @@ body {
   }
 
   .FootnoteCont{
-      display: none !important;
+    display: none !important;
     width: 0%;
     padding: 0px;
     margin: 0px;
@@ -212,8 +212,14 @@ body {
   display: block !important;
   }
 
-}
+  .IntroText p{
+    margin-top: 5.6vh;
+    width: 88vw !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 
+}
 
 
 
