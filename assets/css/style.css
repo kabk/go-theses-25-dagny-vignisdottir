@@ -164,6 +164,80 @@ body {
   line-height: 1.2;
 }
 
+
+
+
+/* MOBILE RESPONSIVENESS FEATURES vvvvvv */
+
+@media (max-width: 1000px){
+  /* body{
+    background-color: red;
+  } */
+
+  :root {
+    --font-size-body: 18px;
+  }
+
+  .margin-note{
+    display: none;
+  }
+
+  .FootnoteCont{
+      display: none !important;
+    width: 0%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  
+  .BodyTextCont{
+    width: 100vw !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .ImageCont{
+    display: none !important;
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+  .intext-margin-note {
+  display: block !important;
+  }
+
+  .intext-img{
+  display: block !important;
+  }
+
+}
+
+
+
+
+.intext-margin-note {
+  font-family: var(--font-footnotes);
+  font-size: 0.8rem;
+  padding-right: 22px;
+  margin: 0px;
+  word-spacing: -0.2rem;
+  /* margin-bottom: -1.6rem; */
+}
+
+
+.intext-img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* MOBILE RESPONSIVENESS FEATURES ^^^^^^ */
+
+
+
 h1 {
   font-family: var(--font-realheading);
   font-size: 80px;
