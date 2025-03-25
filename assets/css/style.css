@@ -254,6 +254,10 @@ body {
     column-gap: 10px !important;
   }
 
+  .body{
+    line-height: 1.1 !important;
+  }
+
 }
 
 
