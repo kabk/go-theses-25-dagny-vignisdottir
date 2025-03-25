@@ -234,6 +234,26 @@ body {
     height: 120vh !important;
   }
 
+  h2, h4 {
+    font-size: 28px !important;
+    line-height: 0.3p !important;
+  }
+
+  .intext-quote, .quote {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+  }
+
+  .BibliographyText{
+    font-size: 0.7rem !important;
+    line-height: 1.1 !important;
+    width: auto !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin: 0rem !important;
+    column-gap: 10px !important;
+  }
+
 }
 
 
