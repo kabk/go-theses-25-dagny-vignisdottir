@@ -214,14 +214,14 @@ body {
   }
 
   .IntroText p{
-    margin-top: 5.6vh;
+    margin-top: 4vh !important;
     width: 86vw !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
 
   .cover{
-    margin-top: 16vh;
+    margin-top: 10vh !important;
   }
 
 
