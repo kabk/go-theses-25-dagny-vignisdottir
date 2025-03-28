@@ -231,6 +231,7 @@ body {
     font-size: 8px !important;
     line-height: 1.1 !important;
     /* white-space: nowrap !important; */
+    hyphens: none !important;
   }
 
   .landingPage {
@@ -242,6 +243,7 @@ body {
     font-size: 30px !important;
     line-height: 1 !important;
     /* white-space: nowrap !important; */
+    hyphens: none !important;
   }
 
   .intext-quote, .quote {
