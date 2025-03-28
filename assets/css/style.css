@@ -230,6 +230,7 @@ body {
   .header-text {
     font-size: 8px !important;
     line-height: 1.1 !important;
+    white-space: nowrap !important;
   }
 
   .landingPage {
@@ -240,6 +241,7 @@ body {
     /* font-size: 28px !important; */
     font-size: 30px !important;
     line-height: 1 !important;
+    white-space: nowrap !important;
   }
 
   .intext-quote, .quote {
