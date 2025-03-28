@@ -215,19 +215,19 @@ body {
 
 
   .IntroText p{
-    margin-top: 2.6vh !important;
+    margin-top: 2.3vh !important;
     width: 86vw !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
 
   .cover{
-    margin-top: 8.0vh !important;
+    margin-top: 7.6vh !important;
   }
 
   .header-text {
     font-size: 5.4px !important;
-    line-height: 1.2 !important;
+    line-height: 1.4 !important;
     /* white-space: nowrap !important; */
     hyphens: none !important;
   }
