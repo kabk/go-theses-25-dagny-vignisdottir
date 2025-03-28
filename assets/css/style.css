@@ -214,7 +214,6 @@ body {
   }
 
 
-
   .IntroText p{
     margin-top: 2.6vh !important;
     width: 86vw !important;
@@ -223,12 +222,11 @@ body {
   }
 
   .cover{
-    margin-top: 8.8vh !important;
+    margin-top: 8.4vh !important;
   }
 
-
   .header-text {
-    font-size: 5.6px !important;
+    font-size: 5.4px !important;
     line-height: 1.2 !important;
     /* white-space: nowrap !important; */
     hyphens: none !important;
