@@ -216,21 +216,21 @@ body {
 
 
   .IntroText p{
-    margin-top: 3.1vh !important;
+    margin-top: 2.9vh !important;
     width: 86vw !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
 
   .cover{
-    margin-top: 9.3vh !important;
+    margin-top: 9.1vh !important;
   }
 
 
   .header-text {
     font-size: 8px !important;
     line-height: 1.1 !important;
-    white-space: nowrap !important;
+    /* white-space: nowrap !important; */
   }
 
   .landingPage {
@@ -241,7 +241,7 @@ body {
     /* font-size: 28px !important; */
     font-size: 30px !important;
     line-height: 1 !important;
-    white-space: nowrap !important;
+    /* white-space: nowrap !important; */
   }
 
   .intext-quote, .quote {
